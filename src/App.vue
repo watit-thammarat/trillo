@@ -120,6 +120,40 @@
 
           </div>
         </div>
+        <div class="detail">
+          <div class="description">
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolore a nemo fugit voluptatem doloremque veniam, itaque temporibus libero reiciendis tempore unde iure dignissimos alias. Ea neque natus explicabo veritatis.
+            </p>
+            <p class="paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae quae ipsum nulla impedit earum temporibus accusamus veniam perspiciatis ipsam consequuntur.
+            </p>
+            <ul class="list">
+              <li class="list__item">Close to the beach</li>
+              <li class="list__item">Breakfast included</li>
+              <li class="list__item">Free airport shuttle</li>
+              <li class="list__item">Free wifi in all rooms</li>
+              <li class="list__item">Air conditioning and heating</li>
+              <li class="list__item">Pets allowed</li>
+              <li class="list__item">We spead all alanguages</li>
+              <li class="list__item">Perfect for families</li>
+            </ul>
+            <div class="recommend">
+              <p class="recommend__count">
+                Lucy and 3 other friends recommend this hotel.
+              </p>
+              <div class="recommend__friends">
+                <img src="img/user-3.jpg" alt="Friend 3" class="recommend__photo">
+                <img src="img/user-4.jpg" alt="Friend 4" class="recommend__photo">
+                <img src="img/user-5.jpg" alt="Friend 5" class="recommend__photo">
+                <img src="img/user-6.jpg" alt="Friend 6" class="recommend__photo">
+              </div>
+              </div>
+            </div>
+            <div class="user-review">
+              User Reviews
+            </div>
+          </div>
       </main>
     </div>
   </div>
