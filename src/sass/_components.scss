@@ -9,6 +9,12 @@
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: $bp-smallest) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+  }
+
   &__input {
     font-family: inherit;
     font-size: inherit;
@@ -114,11 +120,24 @@
   list-style: none;
   margin-top: 3.5rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
 
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+    }
+
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 0;
+      }
     }
 
     &:before {
@@ -158,6 +177,16 @@
       align-items: center;
       position: relative;
       z-index: 10;
+
+      @media only screen and (max-width: $bp-medium) {
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        padding: 1.5rem 0.5rem;
+      }
     }
   }
 
@@ -166,6 +195,14 @@
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor;
+    display: block;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+      margin-bottom: 0.7rem;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
 
@@ -174,6 +211,10 @@
   font-size: 1.2rem;
   text-align: center;
   padding: 1.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
 .gallery {
@@ -201,6 +242,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+      padding: 1.25 2rem;
+    }
   }
 
   &__stars {
@@ -236,17 +282,29 @@
     justify-content: center;
     color: #fff;
     padding: 0 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
     font-size: 0.8rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0.5rem;
+    }
   }
 }
 
@@ -347,6 +405,7 @@
   }
 
   &__friends {
+    display: flex;
   }
 
   &__photo {
@@ -357,7 +416,7 @@
     box-sizing: content-box;
 
     &:not(:first-child) {
-      margin-left: -1.5rem;
+      margin-left: -2rem;
     }
   }
 }
@@ -370,8 +429,21 @@
   position: relative;
   overflow: hidden;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    align-self: stretch;
+  }
+
   &--2 {
     margin-bottom: auto;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__text {
@@ -432,6 +504,10 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2.5rem;
+  }
 
   &__book-now {
     text-transform: uppercase;
